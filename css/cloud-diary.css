@@ -1,0 +1,95 @@
+/* Base styles */
+#user-notes-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#user-notes-content {
+    width: 100%;
+    min-height: 300px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+#user-notes-save {
+    background-color: #052098;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#user-notes-save:hover {
+    background-color: #031666;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    #user-notes-container {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    #user-notes-content {
+        min-height: 250px;
+        font-size: 14px;
+    }
+
+    #user-notes-save {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #user-notes-container {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    #user-notes-content {
+        min-height: 200px;
+        font-size: 14px;
+    }
+}
+
+/* Additional enhancements */
+#user-notes-content:focus {
+    outline: none;
+    border-color: #052098;
+    box-shadow: 0 0 0 2px rgba(5, 32, 152, 0.2);
+}
+
+#user-notes-save:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(5, 32, 152, 0.4);
+}
+
+/* Smooth transitions */
+#user-notes-content,
+#user-notes-save {
+    transition: all 0.3s ease;
+}
+
+/* Success message styling */
+.notes-saved-message {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
